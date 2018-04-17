@@ -2,12 +2,18 @@
 
 module.exports = function(environment) {
   let ENV = {
+    'ember-resolver': {
+      features: {
+        EMBER_RESOLVER_MODULE_UNIFICATION: true
+      }
+    },
     modulePrefix: 'ember-sv',
     environment,
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
+        'ember-module-unification': true
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
       },
